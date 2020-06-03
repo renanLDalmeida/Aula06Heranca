@@ -6,7 +6,13 @@ namespace Encapsulamento
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+           CPF cpf = new CPF();
+           cpf.nome = "Renan";
+           Console.WriteLine( cpf.Saudacao() );
+
+           cpf.cpf = "123.456.789-0";
+           Console.WriteLine( cpf.ValidarCPF() );
     }
+}
+
 }
